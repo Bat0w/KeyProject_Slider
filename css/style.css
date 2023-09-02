@@ -1,0 +1,324 @@
+/*fonts*/
+
+@font-face {
+    font-family: 'Nunito Sans';
+    src: url('../fonts/NunitoSans-Regular.ttf') format('truetype'),
+        url('../fonts/NunitoSans-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Nunito Sans';
+    src: url('../fonts/NunitoSans-Italic.ttf') format('truetype'),
+        url('../fonts/NunitoSans-Italic.woff') format('woff');
+    font-style: italic;
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 15px;
+    text-align: center;
+}
+@font-face {
+    font-family: 'Yeseva One';
+    src: url('../fonts/YesevaOne-Regular.ttf') format('truetype'),
+        url('../fonts/YesevaOne-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.body{
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+body * {
+    box-sizing: border-box;
+}
+
+.container{
+    max-width: 1263px;
+    margin: 0 auto;
+}
+
+.button{
+    background-color: #E3B873;
+    box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.2);
+    border-radius: 2px;
+    outline: 0;
+    border: 0;
+    padding: 13px 33px;
+    color: white;
+    text-transform: uppercase;
+    font-style: italic;
+}
+.logo{
+    color: #E3B873;
+    text-transform: uppercase;
+}
+
+
+.project {
+    background-color: black;
+    padding-top: 107px;
+    padding-left: 134px;
+    height: 1074px;
+}
+.project-content{
+    padding-bottom: 414px;
+}
+.project-menu{
+    padding-left: 600px;
+    padding-top: 0px;
+    list-style: none;
+    display: flex;
+}
+.project-menu_item{
+    padding-right: 60px;
+    margin: 0;
+}
+.project-menu_item a{
+    font-family: 'Yeseva One';
+    font-size: 14px;
+    line-height: 19px;
+    text-transform: uppercase;
+}
+
+/*.project-menu_item a:hover {
+    color: #e3b873;
+    -webkit-transition: 0.2s;
+    -o-transition: 0.2s;
+    transition: 0.2s;
+    border-bottom: 1px solid #E3B873;
+    padding-bottom: 6px;
+ }
+*/
+.link_nav {
+    color: rgba(255, 255, 255, 0.3);
+    text-decoration: none;
+ }
+
+.link_nav:hover {
+    color: #E3B873; 
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.active-link { 
+    color: #E3B873; 
+    text-decoration: underline;
+ }
+
+/*
+.complete_project{
+    display: inline-block;
+}*/
+@media screen and (max-width: 1300px){
+    .project{
+        padding-top: 30px;
+        padding-left: 18px;
+        padding-right: 18px;
+        background-color: #252525;
+    }
+    .project-menu{
+        display: none;
+    }
+    .project-menu_item{
+        padding-right: 0px;
+    }
+}
+.project_description{
+    display: flex;
+}
+.project_text{
+    color: #FFFFFF;
+    font-family: 'Nunito Sans';
+    font-size: 14px;
+    line-height: 27px;
+}
+.slider{
+    margin-left: 50px;
+    height: 482px;
+    max-width: 679px;
+    filter: drop-shadow(0px 50px 30px rgba(0, 0, 0, 0.15));
+    overflow: hidden;
+}
+
+.slider-list {
+    display: flex;
+    transition: all 0.5s;
+    align-items: center;
+  }
+
+.slider-ist .image {
+    background-size: cover;
+    background-position: center center;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    transition: opacity 800ms ease;
+  }
+
+  .slider-list .image.active {
+    opacity: 1;
+  }
+
+.slider-arrows {
+    margin-top: 10%;
+    display: flex;
+}
+
+.arrow-left, .dot {
+    margin-right: 4%;
+}
+
+.slider-arrows img.arrow-left:hover,
+.slider-arrows img.arrow-right:hover {
+  cursor: pointer;
+}
+
+.slider-arrows .dot:hover {
+  cursor: pointer;   
+}
+.dot {
+  width: 9.5px;
+  height: 9.5px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.active-dot {
+  background-color: #FFFFFF;
+}
+
+
+.image_mobile{
+    height: 482px;
+    width: 679px;
+    filter: drop-shadow(0px 50px 30px rgba(0, 0, 0, 0.15));
+    margin-left: 50px;
+}
+.subtitle{
+    font-family: 'Yeseva One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 27px;
+    line-height: 37px;
+    letter-spacing: -0.07em;
+    text-transform: uppercase;
+    color: #E3B873;
+}
+
+@media screen and (max-width: 1300px){
+    .subtitle{
+        text-align: center;
+    }
+    .image_carousel{
+        display: none;
+        text-align: center;
+        height: 240px;
+        width: auto;
+    }
+    .project_description{
+        display: block;
+    }
+    .fit-picture{
+        height: 240px;
+        width: auto;
+    }
+   .image_mobile{
+        margin-left: -8px;
+        height: 240px;
+        width: auto;
+    } 
+}
+.subtitle-h3{
+    font-size: 18px;
+    line-height: 25px;
+    letter-spacing: normal;
+}
+@media screen and (max-width: 1300px){
+    .subtitle-h3{
+        font-size: 14px;
+        line-height: 138.6%;
+        text-align: left;
+    }
+}
+
+.subtitle-h3_1{
+    font-family: 'Yeseva One';
+    font-size: 20px;
+    line-height: 28px;
+    letter-spacing: normal;
+    text-align: center;
+    color: #FFFFFF;
+    margin: 0 auto ;
+}
+.subtitle-h3_black{
+    font-family: 'Yeseva One';
+    font-size: 20px;
+    line-height: 28px;
+    text-align: center;
+    color: #181818;
+    letter-spacing: normal;
+    margin: 0 auto ;
+}
+
+.subtitles-h4{
+    font-family: 'Yeseva One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+    color: #363636;
+    background-color: #FFFFFF;
+    margin-inline-start: 35px;
+    margin-top: -25px;
+}
+.subtitles-h4_client{
+    font-family: 'Yeseva One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 23px;
+    color: #181818;
+    text-align: left;
+    margin-bottom: 0;
+    margin-left: 23px;
+}
+.subtitle-form2{
+    font-family: 'Nunito Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 26px;
+    text-align: center;
+    text-transform: none;
+    color: #FFFFFF;
+    letter-spacing: normal;
+    margin: 0 auto;
+    margin-top: 28px;
+}
+.span_white{
+    color: #FFFFFF;
+    font-size: 13px;
+    line-height: 21px;
+    display: none;
+}
+
+.active-text {
+    display: block;
+  }
+  
+.wrapper{
+    margin-top: -250px;
+    display: inline-block;
+    vertical-align: top;
+}
+.wrap_item{
+    display: inline-block; 
+    *display: inline;
+    zoom: 1; 
+    width: 33%
+}
+
